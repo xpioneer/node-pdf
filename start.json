@@ -1,0 +1,13 @@
+{
+  "apps" : [{
+    "name"        : "Node-PDF",
+    "script"      : "./release/src/run.js",
+    "watch"       : true,
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "env_production" : {
+      "NODE_ENV": "production"
+    }
+  }]
+}

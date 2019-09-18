@@ -1,0 +1,26 @@
+{
+  "name": "node-pdf",
+  "version": "1.0.0",
+  "description": "A Koa2 project with ts",
+  "main": "index.js",
+  "author": "xpioneer",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development nodemon --config nodemon.json",
+    "clean": "rm -rf release",
+    "build": "NODE_ENV=production tsc -b tsconfig.json",
+    "start:prod": "pm2 start start.json"
+  },
+  "dependencies": {
+    "koa": "^2.8.1",
+    "puppeteer": "^1.20.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/puppeteer": "^1.19.1",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
